@@ -13,15 +13,15 @@ Entrypoint is the `TransparencyMaster.GUI` project.
 ![Example 2](examples/example2.png)
 
 ### Publishing as single file
-The following command is an example of how to publish the application into single file with entire dotnet runtime in it:
+The following command is an example of how to publish the application into single executable file with entire dotnet runtime in it:
 
 ```
 dotnet publish -c Release -r win-x64 -p:PublishSingleFile=true --self-contained true
 ```
 
-- Output file is will be in `TransparencyMaster.GUI\bin\Release\netcoreapp3.1\[win-runtime]\publish` folder
+- Output file will be in `TransparencyMaster.GUI\bin\Release\netcoreapp3.1\[win-runtime]\publish` folder
   - Where `win-runtime` is your selected windows runtime
 - Windows runtime can be changed using `-r` switch
 
 ## Known issues
-Some applications such as `Taskmgr` or `devenv` (Visual Studio) might not change their transparency level. If you know the reason or how to fix it, please let me know.
+Some applications such as `Taskmgr` or `devenv` (Visual Studio) might not change their transparency level. If you know the reason why or how to fix it, please let me know.
