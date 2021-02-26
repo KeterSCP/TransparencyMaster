@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <DebugType Condition=" '$(Configuration)' == 'Release' ">None</DebugType>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="WinTypes\" />
+  </ItemGroup>
+
+</Project>
